@@ -1,5 +1,8 @@
 package dao;
 
+import javax.json.JsonArrayBuilder;
+import javax.sql.DataSource;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -9,14 +12,14 @@ import java.util.ArrayList;
  **/
 public interface CrudDAO <T,ID> extends SuperDAO{
 
-    boolean add(T t) throws SQLException, ClassNotFoundException;
+    boolean add(T t,DataSource dataSource) throws SQLException, ClassNotFoundException;
 
-    boolean delete(ID id) throws SQLException, ClassNotFoundException;
+    boolean delete(ID id,DataSource dataSource) throws SQLException, ClassNotFoundException;
 
-    boolean update(T t) throws SQLException, ClassNotFoundException;
+    boolean update(T t,DataSource dataSource) throws SQLException, ClassNotFoundException;
 
-    T search(ID id) throws SQLException, ClassNotFoundException;
+    T search(ID id,DataSource dataSource) throws SQLException, ClassNotFoundException;
 
-    ArrayList<T> getAll() throws SQLException, ClassNotFoundException;
+    JsonArrayBuilder getAll(DataSource dataSource) throws SQLException, ClassNotFoundException;
 
 }

@@ -374,7 +374,7 @@
             method: "POST",
             data: data,
             success(res) {
-                alert(res);
+                alert(res.data);
                 loadAllCustomer();
             },
             error (ob, textStatus, error) {
@@ -391,15 +391,13 @@
             url:"customer",
             method:"GET",
             success(resp) {
-                console.log(resp);
-                for (var i in resp) {
-                    var id = resp[i].id;
-                    var name = resp[i].name;
-                    var address = resp[i].address;
-                    var salary = resp[i].salary;
+                console.log(resp.data);
+                for (var i of resp.data) {
+                    var row = `<tr><td>${i.id}</td><td>${i.name}</td><td>${i.address}</td><td>${i.salary}</td></tr>`;
 
-                    var row = `<tr><td>${id}</td><td>${name}</td><td>${address}</td><td>${salary}</td></tr>`;
                     $("#customerTable").append(row);
+
+
                     $("#customerTable>tr").click(function () {
 
 
