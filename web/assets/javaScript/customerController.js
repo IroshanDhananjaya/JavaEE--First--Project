@@ -116,14 +116,27 @@ $("#btn-delete-customer").click(function (){
 });
 
 $("#btn-update-customer").click(function (){
+    var cusOb ={
+        "id":$("#txtCusID").val(),
+        "name":$("#txtCusName").val(),
+        "address":$("#txtCusAddress").val(),
+        "salary":$("#txtCusSalary").val()
+    }
+
     var data = $("#customerForm").serialize();
     $.ajax({
         url:"customer?"+data,
         method:"PUT",
-
+        contentType:"application/json",
+        data:JSON.stringify(cusOb),
         success(resp){
-            loadAllCustomer();
-            alert(resp);
+            if(resp.status==200){
+                loadAllCustomer();
+                alert(resp.message);
+            }else {
+                alert(resp.data);
+
+            }
         }
     });
 });
