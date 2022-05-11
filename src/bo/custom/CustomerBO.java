@@ -6,6 +6,7 @@ import dto.CustomerDTO;
 import javafx.collections.ObservableList;
 
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonObjectBuilder;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -19,5 +20,5 @@ public interface CustomerBO extends SuperBO {
     JsonArrayBuilder loadAllCustomerforTable(DataSource d) throws SQLException, ClassNotFoundException;
     boolean deleteCustomer(String id,DataSource dataSource) throws SQLException, ClassNotFoundException;
     boolean updateCustomer(CustomerDTO  c,DataSource dataSource)throws SQLException, ClassNotFoundException;
-
+    JsonObjectBuilder getCustomer(String id,DataSource dataSource)throws SQLException, ClassNotFoundException;
 }

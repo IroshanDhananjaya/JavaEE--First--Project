@@ -3,7 +3,6 @@ package dao.custom.impl;
 import dao.custom.CustomerDAO;
 import entity.Customer;
 
-import javax.annotation.Resource;
 import javax.json.Json;
 import javax.json.JsonArrayBuilder;
 import javax.json.JsonObject;
@@ -13,7 +12,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 /**
  * @author : Dhananjaya
@@ -73,8 +71,33 @@ public class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
-    public Customer search(String s,DataSource dataSource) throws SQLException, ClassNotFoundException {
-        return null;
+    public JsonObjectBuilder search(String s, DataSource dataSource) throws SQLException, ClassNotFoundException {
+
+
+        JsonObjectBuilder objectBuilder = Json.createObjectBuilder();
+
+        Connection connection = dataSource.getConnection();
+        PreparedStatement stm = connection.prepareStatement("SELECT * From Customer WHERE Id=?");
+        stm.setString(1, s);
+        ResultSet rst = stm.executeQuery();
+        Customer customer;
+        while (rst.next()) {
+
+            String id = rst.getString(1);
+            String name = rst.getString(2);
+            String address = rst.getString(3);
+            String salary = rst.getString(4);
+
+            objectBuilder.add("id",id);
+            objectBuilder.add("name",name);
+            objectBuilder.add("address",address);
+            objectBuilder.add("salary",salary);
+
+
+
+        }
+        connection.close();
+        return objectBuilder;
     }
 
     @Override

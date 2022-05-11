@@ -35,24 +35,30 @@ public class CustomerServlet extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
             resp.setContentType("application/json");
-        try {
-            JsonArrayBuilder arrayBuilder =CustomerBO.loadAllCustomerforTable(dataSource);
+            try {
+
+                        JsonArrayBuilder arrayBuilder =CustomerBO.loadAllCustomerforTable(dataSource);
 
 
-            PrintWriter writer = resp.getWriter();
-            JsonObjectBuilder response = Json.createObjectBuilder();
-            response.add("massage","Done");
-            response.add("status",200);
-            response.add("data",arrayBuilder.build());
+                        PrintWriter writer = resp.getWriter();
+                        JsonObjectBuilder response = Json.createObjectBuilder();
+                        response.add("massage","Done");
+                        response.add("status",200);
+                        response.add("data",arrayBuilder.build());
 
 
-            writer.print(response.build());
+                        writer.print(response.build());
 
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+                    } catch (SQLException e) {
+                        e.printStackTrace();
+                    } catch (ClassNotFoundException e) {
+                        e.printStackTrace();
+                    }
+
+
+
+
+
 
     }
 

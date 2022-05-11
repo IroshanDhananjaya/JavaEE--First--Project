@@ -1,4 +1,4 @@
-var customerDb=new Array();
+
 
 function forCustomer(){
     loadAllCustomer();
@@ -63,7 +63,7 @@ function saveCustomer(){
 function loadAllCustomer(){
     $("#customerTable").empty();
     $.ajax({
-        url:"customer",
+        url:"customer?option=GETALL",
         method:"GET",
         success(resp) {
             console.log(resp.data);
@@ -123,9 +123,9 @@ $("#btn-update-customer").click(function (){
         "salary":$("#txtCusSalary").val()
     }
 
-    var data = $("#customerForm").serialize();
+
     $.ajax({
-        url:"customer?"+data,
+        url:"customer",
         method:"PUT",
         contentType:"application/json",
         data:JSON.stringify(cusOb),
@@ -141,6 +141,24 @@ $("#btn-update-customer").click(function (){
     });
 });
 
+
+$("#btn-customer-search").click(function (){
+   var custID= $("#txtCustomerSearch").val();
+    $.ajax({
+        url:"customer",
+        method:"Get",
+        success(resp){
+            for (var i of resp.data) {
+                if(custID==i.id){
+                    $("#txtCusName").val(i.name);
+                    $("#txtCusAddress").val(i.address);
+                    $("#txtCusSalary").val(i.salary);
+                    $("#txtCusID").val(i.id);
+                }
+            }
+        }
+    });
+});
 //validation start
 
 const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;

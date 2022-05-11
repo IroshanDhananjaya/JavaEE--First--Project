@@ -1,10 +1,10 @@
 package dao;
 
+import javax.json.Json;
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonObjectBuilder;
 import javax.sql.DataSource;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 
 /**
  * @author : Dhananjaya
@@ -18,7 +18,7 @@ public interface CrudDAO <T,ID> extends SuperDAO{
 
     boolean update(T t,DataSource dataSource) throws SQLException, ClassNotFoundException;
 
-    T search(ID id,DataSource dataSource) throws SQLException, ClassNotFoundException;
+    JsonObjectBuilder search(ID id, DataSource dataSource) throws SQLException, ClassNotFoundException;
 
     JsonArrayBuilder getAll(DataSource dataSource) throws SQLException, ClassNotFoundException;
 

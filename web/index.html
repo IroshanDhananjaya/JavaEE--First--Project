@@ -21,7 +21,7 @@
                     <li class="nav-item"><a  class="nav-link" id="btn-home" >Home</a></li>
                     <li class="nav-item"><a  class="nav-link" id="btn-placeOrder" >Place Order</a></li>
                     <li class="nav-item"><a  class="nav-link" id="btn-customer" onclick="forCustomer()" >Customer</a></li>
-                    <li class="nav-item"><a  class="nav-link" id="btn-Item" >Items</a></li>
+                    <li class="nav-item"><a  class="nav-link" id="btn-Item"onclick="forItem()" >Items</a></li>
                     <li class="nav-item"><a  class="nav-link" id="btn-Order">Order</a></li>
                 </ul>
 
@@ -250,30 +250,33 @@
         <div class="col-12 col-xl-6 col-xxl-6 Item-form">
             <h1>Item Manage</h1>
             <div class="row">
-                <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
-                    <label for="txtItemCode" class="form-label">Item Code</label>
-                    <input type="text" class="form-control" id="txtItemCode">
-                    <p><small id="ItemCodeError" class="text-danger pl-1"></small></p>
-                </div>
-                <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
-                    <label for="txtItemName" class="form-label">Item Name</label>
-                    <input type="text" class="form-control" id="txtItemName">
-                    <p><small id="ItemNameError" class="text-danger pl-1"></small></p>
-                </div>
-                <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
-                    <label for="txtQty" class="form-label">Qty On Hand</label>
-                    <input type="text" class="form-control" id="txtQty">
-                    <p><small id="ItemQTYError" class="text-danger pl-1"></small></p>
-                </div>
-                <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
-                    <label for="txtPrice" class="form-label">Unit Price</label>
-                    <input type="text" class="form-control" id="txtPrice">
-                    <p><small id="ItemPriceError" class="text-danger pl-1"></small></p>
-                </div>
-                <button type="button" class="btn btn-primary col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-save">Save</button>
-                <button type="button" class="btn btn-success col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-update">Update</button>
-                <button type="button" class="btn btn-danger col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-delete">Delete</button>
-                <button type="button" class="btn btn-primary col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-feild-Clear">Clear</button>
+                <form id="itemForm">
+                    <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
+                        <label for="txtItemCode" class="form-label">Item Code</label>
+                        <input type="text" class="form-control" id="txtItemCode" name="itemCode">
+                        <p><small id="ItemCodeError" class="text-danger pl-1"></small></p>
+                    </div>
+                    <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
+                        <label for="txtItemName" class="form-label">Item Name</label>
+                        <input type="text" class="form-control" id="txtItemName"  name="itemName">
+                        <p><small id="ItemNameError" class="text-danger pl-1"></small></p>
+                    </div>
+                    <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
+                        <label for="txtQty" class="form-label">Qty On Hand</label>
+                        <input type="text" class="form-control" id="txtQty"  name="qty">
+                        <p><small id="ItemQTYError" class="text-danger pl-1"></small></p>
+                    </div>
+                    <div class="mb-3 input-group-sm col-12 col-xl-6 col-xxl-6">
+                        <label for="txtPrice" class="form-label">Unit Price</label>
+                        <input type="text" class="form-control" id="txtPrice"  name="unitPrice">
+                        <p><small id="ItemPriceError" class="text-danger pl-1"></small></p>
+                    </div>
+                    <button type="button" class="btn btn-primary col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-save">Save</button>
+                    <button type="button" class="btn btn-success col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-update">Update</button>
+                    <button type="button" class="btn btn-danger col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-delete">Delete</button>
+                    <button type="button" class="btn btn-primary col-8 col-xl-2 col-xxl-2 mx-3 mb-2" id="btn-item-feild-Clear">Clear</button>
+
+                </form>
 
             </div>
         </div>
@@ -360,5 +363,6 @@
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/javaScript/script.js"></script>
 <script src="assets/javaScript/customerController.js"></script>
+<script src="assets/javaScript/itemController.js"></script>
 </body>
 </html>

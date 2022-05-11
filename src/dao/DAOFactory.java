@@ -22,9 +22,9 @@ public class DAOFactory {
         switch (types) {
             case CUSTOMER:
                 return new CustomerDAOImpl();
-       /*     case ITEM:
+            case ITEM:
                 return new ItemDAOImpl();
-            case ORDER:
+           /* case ORDER:
                 return new OrderDAOImpl();
             case ORDERDETAILS:
                 return new OrderDetailsDAOImpl();

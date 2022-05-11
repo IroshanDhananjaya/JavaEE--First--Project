@@ -10,6 +10,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import javax.json.JsonArrayBuilder;
+import javax.json.JsonObjectBuilder;
 import javax.sql.DataSource;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -42,6 +43,11 @@ public class CustomerBOImpl implements CustomerBO {
     @Override
     public boolean updateCustomer(CustomerDTO c, DataSource dataSource) throws SQLException, ClassNotFoundException {
         return customerDAO.update(new Customer(c.getCustId(), c.getCustName(), c.getAddress(), c.getSalary()),dataSource);
+    }
+
+    @Override
+    public JsonObjectBuilder getCustomer(String id, DataSource dataSource) throws SQLException, ClassNotFoundException {
+        return customerDAO.search(id,dataSource);
     }
 
 }
