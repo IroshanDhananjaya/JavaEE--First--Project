@@ -60,9 +60,14 @@ public class OrderServlet extends HttpServlet {
         JsonReader reader = Json.createReader(req.getReader());
         JsonObject jsonObject = reader.readObject();
 
-       JsonArray oId = jsonObject.getJsonArray("cart");
+        JsonArray cart = jsonObject.getJsonArray("cart");
 
-        System.out.println(oId);
+        for(int i=0;i<cart.size();i++){
+            JsonObject jsonObject1 = cart.getJsonObject(i);
+            System.out.println(jsonObject1.getString("oid"));
+        }
+
+
 
 
     }
