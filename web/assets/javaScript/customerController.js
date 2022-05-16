@@ -103,7 +103,7 @@ $("#btn-delete-customer").click(function (){
 
         success(resp) {
             if (resp.status == 200) {
-                loadAllCustomer();
+                // loadAllCustomer();
                 alert(resp.message);
                 clearAll();
             } else if (resp.status == 400) {
