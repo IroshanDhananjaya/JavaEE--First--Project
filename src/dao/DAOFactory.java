@@ -24,12 +24,11 @@ public class DAOFactory {
                 return new CustomerDAOImpl();
             case ITEM:
                 return new ItemDAOImpl();
-           /* case ORDER:
+            case ORDER:
                 return new OrderDAOImpl();
             case ORDERDETAILS:
                 return new OrderDetailsDAOImpl();
-            case QUERYDAO:
-                return new QueryDAOImpl();*/
+
             default:
                 return null;
         }
