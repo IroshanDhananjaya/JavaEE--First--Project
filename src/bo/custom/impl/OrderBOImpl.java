@@ -30,33 +30,31 @@ public class OrderBOImpl implements OrderBO {
 
     @Override
     public boolean placeOrder(OrderDTO dto, DataSource d)throws SQLException, ClassNotFoundException {
-        Connection connection = null;
+        Connection connection = d.getConnection();
+        connection.setAutoCommit(false);
 
-        try {
-            connection=d.getConnection();
-            connection.setAutoCommit(false);
+            boolean isOrder= orderDAO.add(new Order(dto.getOrderID(), dto.getOrderDate(), dto.getCustID(), dto.getTotal()),d);
 
-            if(orderDAO.add(new Order(dto.getOrderID(), dto.getOrderDate(), dto.getCustID(), dto.getTotal()),d)){
-                for (OrderDetailsDTO temp:dto.getItems()) {
+            if(!isOrder){
+                connection.rollback();
+                connection.setAutoCommit(true);
+                return false;
+            }
+            for (OrderDetailsDTO temp:dto.getItems()) {
+
                     OrderDetails orderDetails=new OrderDetails(temp.getOrderID(), temp.getItemCode(), temp.getOrderQTY(), temp.getItemPrice(), temp.getTotal());
-                    if(orderDetailsDAO.add(orderDetails,d)){
-                        connection.commit();
-                        return true;
-                    }else {
+                    boolean b=orderDetailsDAO.add(orderDetails,d);
+
+                    if(!b){
                         connection.rollback();
+                        connection.setAutoCommit(true);
                         return false;
                     }
+
                 }
-            }
-        } catch (SQLException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }finally {
-            try {
-                connection.setAutoCommit(true);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
-        }
-        return false;
+            connection.commit();
+            connection.setAutoCommit(true);
+            connection.close();
+            return true;
     }
 }

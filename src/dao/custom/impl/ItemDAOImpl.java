@@ -43,7 +43,7 @@ public class ItemDAOImpl implements ItemDAO {
     @Override
     public boolean delete(String code, DataSource dataSource) throws SQLException, ClassNotFoundException {
         Connection connection = dataSource.getConnection();
-        if (connection.prepareStatement("DELETE FROM item WHERE code='"+code+"'").executeUpdate()>0){
+        if (connection.prepareStatement("DELETE FROM item WHERE ItemCode='"+code+"'").executeUpdate()>0){
             connection.close();
             return true;
         }else{
@@ -54,7 +54,7 @@ public class ItemDAOImpl implements ItemDAO {
     @Override
     public boolean update(Item item, DataSource dataSource) throws SQLException, ClassNotFoundException {
         Connection connection = dataSource.getConnection();
-        PreparedStatement stm = connection.prepareStatement("UPDATE item SET description=?, qtyOnHand=?, unitPrice=? WHERE code=?");
+        PreparedStatement stm = connection.prepareStatement("UPDATE item SET Description=?, qtyOnHand=?, unitPrice=? WHERE ItemCode=?");
         stm.setObject(1,item.getItemName());
         stm.setObject(2,Integer.parseInt(item.getQty()));
         stm.setObject(3,Double.parseDouble(item.getUnitPrice()));

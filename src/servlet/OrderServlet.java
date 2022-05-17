@@ -75,6 +75,7 @@ public class OrderServlet extends HttpServlet {
 
 
         for(int i=0;i<cart.size();i++){
+
             JsonObject details = cart.getJsonObject(i);
             String oid = details.getString("oid");
             String cName = details.getString("cName");
@@ -90,6 +91,10 @@ public class OrderServlet extends HttpServlet {
 
        detailsDTOS.add(new OrderDetailsDTO(oid,iID,Integer.parseInt(orderQty),Double.parseDouble(iPrice),Double.parseDouble(ordertotal)));
 
+        }
+
+        for (OrderDetailsDTO temp:detailsDTOS) {
+            System.out.println(temp.getItemCode()+"Huuuuu");
         }
 
         OrderDTO orderDTO=new OrderDTO(orderID,orderDate,custId,ototal,detailsDTOS);
