@@ -1,5 +1,7 @@
 package entity;
 
+import dto.OrderDetailsDTO;
+
 import java.util.ArrayList;
 
 /**
@@ -11,18 +13,19 @@ public class Order {
     private String orderDate;
     private String custID;
     private String total;
-    private ArrayList<OrderDetails> items;
+    private ArrayList<OrderDetailsDTO> items;
 
     public Order() {
     }
 
-    public Order(String orderID, String orderDate, String custID) {
+    public Order(String orderID, String orderDate, String custID, String total) {
         this.orderID = orderID;
         this.orderDate = orderDate;
         this.custID = custID;
+        this.total = total;
     }
 
-    public Order(String orderID, String orderDate, String custID, String total, ArrayList<OrderDetails> items) {
+    public Order(String orderID, String orderDate, String custID, String total, ArrayList<OrderDetailsDTO> items) {
         this.orderID = orderID;
         this.orderDate = orderDate;
         this.custID = custID;
@@ -65,11 +68,11 @@ public class Order {
         this.custID = custID;
     }
 
-    public ArrayList<OrderDetails> getItems() {
+    public ArrayList<OrderDetailsDTO> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<OrderDetails> items) {
+    public void setItems(ArrayList<OrderDetailsDTO> items) {
         this.items = items;
     }
 

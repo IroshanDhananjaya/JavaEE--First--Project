@@ -21,12 +21,12 @@ public class OrderDAOImpl implements OrderDAO {
     @Override
     public boolean add(Order order, DataSource dataSource) throws SQLException, ClassNotFoundException {
         Connection connection = dataSource.getConnection();
-        PreparedStatement stm = connection.prepareStatement("INSERT INTO `order` VALUES (?,?,?,?)");
+        PreparedStatement stm = connection.prepareStatement("INSERT INTO `Order` VALUES (?,?,?)");
 
         stm.setString(1,order.getOrderID());
-        stm.setString(2,order.getCustID());
-        stm.setString(3,order.getOrderDate());
-        stm.setDouble(4,Double.parseDouble(order.getTotal()));
+        stm.setString(2,order.getOrderDate());
+        stm.setString(3,order.getCustID());
+
 
         if(stm.executeUpdate()>0){
             connection.close();
@@ -68,12 +68,12 @@ public class OrderDAOImpl implements OrderDAO {
                 String cId = resultSet.getString(2);
 
                 String oDate = resultSet.getString(3);
-                double price = resultSet.getDouble(4);
+
 
                 objectBuilder.add("oId",oId);
                 objectBuilder.add("cId",cId);
                 objectBuilder.add("oDate",oDate);
-                objectBuilder.add("price",price);
+
 
                 JsonObject build = objectBuilder.build();
                 arrayBuilder.add(build);

@@ -21,13 +21,13 @@ public class OrderDetailsDAOImpl implements OrderDetailsDAO {
     @Override
     public boolean add(OrderDetails orderDetails, DataSource dataSource) throws SQLException, ClassNotFoundException {
         Connection connection = dataSource.getConnection();
-        PreparedStatement stm = connection.prepareStatement("INSERT INTO orderDetails VALUES (?,?,?,?,?)");
+        PreparedStatement stm = connection.prepareStatement("INSERT INTO `Order Details` VALUES (?,?,?,?,?)");
 
-        stm.setString(1,orderDetails.getItemCode());
-        stm.setString(2,orderDetails.getOrderID());
+        stm.setString(1,orderDetails.getOrderID());
+        stm.setString(2,orderDetails.getItemCode());
         stm.setInt(3,orderDetails.getOrderQTY());
-        stm.setDouble(4,orderDetails.getTotal());
-        stm.setDouble(5,orderDetails.getItemPrice());
+        stm.setDouble(4,orderDetails.getItemPrice());
+        stm.setDouble(5,orderDetails.getTotal());
 
         if(stm.executeUpdate()>0){
             connection.close();
@@ -59,7 +59,7 @@ public class OrderDetailsDAOImpl implements OrderDetailsDAO {
 
         try {
             Connection connection = dataSource.getConnection();
-            PreparedStatement stm = connection.prepareStatement("select * from orderDetails");
+            PreparedStatement stm = connection.prepareStatement("select * from `Order Details`");
             ResultSet resultSet = stm.executeQuery();
 
             while (resultSet.next()){
