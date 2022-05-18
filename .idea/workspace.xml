@@ -10,60 +10,127 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0677991a-e735-417e-9478-4be8ca6582ff" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaEEPosSystem.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_json_1_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataBase.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaEEPosSystem.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.json-1.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.json-api-1.1.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.25.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Filters/MyFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/BOFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/SuperBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/CustomerBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/OrderBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/OrderDetailsBO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/CustomerBOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/OrderBOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/OrderDetailsBOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/CrudDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/SuperDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/CustomerDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/OrderDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/OrderDetailsDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/QueryDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/CustomerDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/OrderDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/OrderDetailsDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/QueryDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/CustomerDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/ItemDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/OrderDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dto/OrderDetailsDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Item.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Order.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/OrderDetails.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/CustomerServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/ItemServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/OrderServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/servlet/PlaceOrderServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/JavaEEPosSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_json_1_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataBase.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Java EE Pos System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaEEPosSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.json-1.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.json-api-1.1.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Filters/MyFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/BOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/SuperBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/CustomerBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/OrderBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/OrderDetailsBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/CustomerBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/OrderBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bo/custom/impl/OrderDetailsBOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/CrudDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/DAOFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/SuperDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/OrderDetailsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/QueryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/CustomerDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/OrderDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/OrderDetailsDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dao/custom/impl/QueryDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/ItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/OrderDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dto/OrderDetailsDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/OrderDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/CustomerServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/ItemServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/OrderDetailsServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/OrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/servlet/PlaceOrderServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/META-INF/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/Front_End.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/db/DB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/images/order.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/images/people.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/images/shopping-bag.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/images/target.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/jQuery/jquery-3.6.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/javaScript/PlaceOrderController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/javaScript/customerController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/javaScript/itemController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/javaScript/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/model/CartDTO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/model/CustomerDTO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/model/ItemDTO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/model/OrderDTO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/model/OrderDetailsDTO.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/styles/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/assets/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Front_End/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Java EE Pos System" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +168,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Front_End/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -122,7 +189,6 @@
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JavaEEPosSystem/" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="JavaEEPosSystem">
@@ -224,7 +290,8 @@
       <workItem from="1652673492894" duration="50163000" />
       <workItem from="1652797684281" duration="4367000" />
       <workItem from="1652841801337" duration="215000" />
-      <workItem from="1652858734735" duration="8172000" />
+      <workItem from="1652858734735" duration="7825000" />
+      <workItem from="1652885249562" duration="262000" />
     </task>
     <servers />
   </component>

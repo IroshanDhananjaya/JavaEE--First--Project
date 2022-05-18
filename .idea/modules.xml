@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../Front_End/Front_End.iml" filepath="$PROJECT_DIR$/../Front_End/Front_End.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Java EE Pos System/Java EE Pos System.iml" filepath="$PROJECT_DIR$/Java EE Pos System/Java EE Pos System.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaEEPosSystem.iml" filepath="$PROJECT_DIR$/JavaEEPosSystem.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PosSystem/PosSystem.iml" filepath="$PROJECT_DIR$/PosSystem/PosSystem.iml" />
     </modules>
   </component>
 </project>
