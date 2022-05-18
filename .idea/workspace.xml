@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="JavaEEPosSystem" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0677991a-e735-417e-9478-4be8ca6582ff" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaEEPosSystem.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/javax_json_1_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_25.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataBase.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaEEPosSystem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.json-1.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.json-api-1.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Filters/MyFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/BOFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/SuperBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/CustomerBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/ItemBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/OrderBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/OrderDetailsBO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/CustomerBOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/ItemBOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/OrderBOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bo/custom/impl/OrderDetailsBOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/CrudDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/DAOFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/SuperDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/CustomerDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/ItemDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/OrderDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/OrderDetailsDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/QueryDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/CustomerDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/ItemDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/OrderDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/OrderDetailsDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/custom/impl/QueryDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/CustomerDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/ItemDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/OrderDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dto/OrderDetailsDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Item.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/OrderDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/ItemServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/OrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/servlet/PlaceOrderServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="28pxPy9wZ6Jtfiu4xRGDmOEapcP" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IJSE\GDSE57\Front_End\assets" />
+      <recent name="E:\IJSE\GDSE57\Front_End\assets\javaScript" />
+      <recent name="E:\IJSE\GDSE57\Front_End" />
+      <recent name="E:\IJSE\GDSE57\JavaEEPosSystem\src\bo" />
+      <recent name="E:\IJSE\GDSE57\JavaEEPosSystem\web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/JavaEEPosSystem/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="JavaEEPosSystem">
+          <settings>
+            <option name="CONTEXT_PATH" value="/JavaEEPosSystem" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="5aa257a5-43c9-41db-9174-e5965a515d3c" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="58380" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="JavaEEPosSystem" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0677991a-e735-417e-9478-4be8ca6582ff" name="Changes" comment="" />
+      <created>1651927312701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1651927312701</updated>
+      <workItem from="1651927315202" duration="358000" />
+      <workItem from="1652112102116" duration="7005000" />
+      <workItem from="1652153611136" duration="27959000" />
+      <workItem from="1652673492894" duration="50163000" />
+      <workItem from="1652797684281" duration="4367000" />
+      <workItem from="1652841801337" duration="215000" />
+      <workItem from="1652858734735" duration="8172000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/assets/javaScript/customerController.js</url>
+          <line>37</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/assets/javaScript/customerController.js</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/assets/javaScript/customerController.js</url>
+          <line>221</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/web/assets/javaScript/customerController.js</url>
+          <line>254</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/servlet/CustomerServlet.java</url>
+          <line>35</line>
+          <properties class="servlet.CustomerServlet" method="doGet">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
